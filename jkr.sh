@@ -28,7 +28,7 @@ cd ..
 
 echo "Executing jkind Regression Test...Please be patient"
 cd ./jkindRegression
-python3 jkindtest.py -dir ../jkind/testing -jar ../jkind/build/jkind.jar -logfile ../jkr.log --gui --recur
+python jkindtest.py -dir ../jkind/testing -jar ../jkind/build/jkind.jar -logfile ../jkr.log --gui --recur
 
 if [ $? == 0 ]; then
    echo "Test Successful"
