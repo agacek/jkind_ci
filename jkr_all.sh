@@ -1,4 +1,5 @@
 #!/bin/bash
+# Clones or Pulls repos as appropriate. Executes jkind Regression suite.
 clear
 echo Simple Build and Test Script
 

@@ -1,4 +1,5 @@
 #!/bin/bash
+# Clones or Pulls from repos as appropriate.
 clear
 echo Simple Build and Test Script
 
