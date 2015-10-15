@@ -20,3 +20,4 @@ if [ -d "jkind" ]; then
    cd ..
 else
    git clone https://github.com/agacek/jkind.git jkind --branch master
+fi
