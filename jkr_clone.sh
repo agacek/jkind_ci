@@ -19,4 +19,4 @@ if [ -d "jkind" ]; then
    git pull
    cd ..
 else
-   git clone https://github.com/agacek/jkind.git jkind --branch master
+   git clone https://github.com/pr-martin/jkind.git jkind --branch small_test
