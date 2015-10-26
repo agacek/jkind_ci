@@ -3,6 +3,13 @@
 clear
 echo Simple Build and Test Script
 
+if [ $OSTYPE == "linux-gnu" ]; then
+   export JAVA_HOME=/usr/lfs/ssd_v0/gacek/jdk1.8.0_60
+   export PATH=${PATH}:${JAVA_HOME}/bin
+   alias ant='/usr/lfs/ssd_v0/opt/apache-ant-1.9.6/bin/ant'
+   python3=/usr/lfs/ssd_v0/opt/Python-3.5.0/python
+fi
+   
 curdir=$PWD
 printf '%s\n' $curdir
 
@@ -29,7 +36,11 @@ cd ..
 
 echo "Executing jkind Regression Test...Please be patient"
 cd ./jkindRegression
-python jkindtest.py -dir ../jkind/testing -jar ../jkind/build/jkind.jar -logfile ../jkr.log --gui --recur
+if [ $OSTYPE == "linux-gnu" ]; then   
+   $python3 jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log -java ${JAVA_HOME}/bin/java --recur
+else
+   python jkindtest.py -dir ../jkind/testing -jar ../jkind/build/jkind.jar -logfile ../jkr.log --gui --recur
+fi
 
 if [ $? == 0 ]; then
    echo "Test Successful"
