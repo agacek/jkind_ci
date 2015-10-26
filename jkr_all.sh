@@ -4,7 +4,7 @@ clear
 echo Simple Build and Test Script
 
 if [ $OSTYPE == "linux-gnu" ]; then
-   export JAVA_HOME=/usr/lfs/ssd_v0/gacek/jdk1.8.0_60
+   export JAVA_HOME=/usr/lfs/ssd_v0/opt/jdk1.8.0_60
    export PATH=${PATH}:${JAVA_HOME}/bin
    alias ant='/usr/lfs/ssd_v0/opt/apache-ant-1.9.6/bin/ant'
    python3=/usr/lfs/ssd_v0/opt/Python-3.5.0/python
