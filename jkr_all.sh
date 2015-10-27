@@ -1,11 +1,16 @@
 #!/bin/bash
+# Please run this as $ source jkr_all.sh
 # Clones or Pulls repos as appropriate. Executes jkind Regression suite.
 clear
 echo Simple Build and Test Script
 
 if [ $OSTYPE == "linux-gnu" ]; then
    export JAVA_HOME=/usr/lfs/ssd_v0/opt/jdk1.8.0_60
-   export PATH=${PATH}:${JAVA_HOME}/bin
+   export YICES_HOME=/usr/lfs/ssd_v0/opt/yices-1.0.40
+   export YICES2_HOME=/usr/lfs/ssd_v0/opt/yices-2.4.1
+   export CVC4_HOME=/usr/lfs/ssd_v0/opt/cvc4
+   export Z3_HOME=/usr/lfs/ssd_v0/opt/z3/build
+   export PATH=${PATH}:${JAVA_HOME}/bin:${YICES_HOME}/bin:${YICES2_HOME}/bin:${CVC4_HOME}:${Z3_HOME}/bin
    alias ant='/usr/lfs/ssd_v0/opt/apache-ant-1.9.6/bin/ant'
    python3=/usr/lfs/ssd_v0/opt/Python-3.5.0/python
 fi
