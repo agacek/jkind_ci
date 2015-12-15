@@ -42,9 +42,9 @@ cd ..
 echo "Executing jkind Regression Test...Please be patient"
 cd ./jkindRegression
 if [ $OSTYPE == "linux-gnu" ]; then   
-   $python3 jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log -java ${JAVA_HOME}/bin/java --recur --quiet
+   $python3 jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log -java ${JAVA_HOME}/bin/java --quiet
 else
-   python jkindtest.py -dir ../jkind/testing -jar ../jkind/build/jkind.jar -logfile ../jkr.log --gui --recur
+   python jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log --gui
 fi
 
 if [ $? == 0 ]; then
