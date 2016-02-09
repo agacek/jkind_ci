@@ -8,10 +8,10 @@ The jkr.sh bash script is intended to build the jkind jar and then run the Pytho
 This script will either clone or do a pull request on the jkind and jkindRegression repo's from Git-Hub, then attempt to run the Python regression test suite. That's all it does, no e-mail, has to be run manually, and you have to look at the results in the log file yourself.
 
 Currently pulls from:
-https://github.com/pr-martin/jkind.git
-https://github.com/pr-martin/jkindRegression.git
 
-The jkind is my own fork as this is the one that has the ant build.xml files.
+https://github.com/agacek/jkind.git
+
+https://github.com/pr-martin/jkindRegression.git
 
 ### Requirements:
  - Python 3.4.2 or greater and on your system path
