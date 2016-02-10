@@ -44,7 +44,7 @@ cd ./jkindRegression
 if [ $OSTYPE == "linux-gnu" ]; then   
    $python3 jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log -java ${JAVA_HOME}/bin/java --quiet
 elif [[ ($OSTYPE == "darwin") || ($OSTYPE == "darwin15") ]]; then
-   python3 jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log --quiet
+   python3 jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log --quiet --gui
 else
    python jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log --gui
 fi
