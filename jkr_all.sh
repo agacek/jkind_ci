@@ -46,7 +46,7 @@ if [ $OSTYPE == "linux-gnu" ]; then
 elif [[ ($OSTYPE == "darwin") || ($OSTYPE == "darwin15") ]]; then
    python3 jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log --quiet --gui
 else
-   python jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log --gui
+   python jkindtest.py -dir ../jkind/testing -jkind ../jkind/build/jkind.jar -logfile ../jkr.log --quiet --gui
 fi
 
 if [ $? == 0 ]; then
