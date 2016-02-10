@@ -1,6 +1,6 @@
 # jkind_ci
 
-A place to dump tools or scripts to test jkind against the jkindRegression.
+JKind Continuous Integration. Provides two scripts, one to clone-build-test and a second to clone only. The repositories cloned are the JKind and jkindRegression. 
 
 ## jkr_all.sh
 The jkr_all.sh bash script is intended to build the jkind jar and then run the Python jkind regression test suite. It's meant to provide a semi-automated build and test while waiting for the real CI tool. If running on Windows it does assume that you have Cygwin installed to run the scripts.
