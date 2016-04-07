@@ -11,7 +11,7 @@ if [ -d "jkindRegression" ]; then
    git pull
    cd ..
 else
-   git clone https://github.com/pr-martin/jkindRegression.git jkindRegression --branch master
+   git clone https://github.com/agacek/jkindRegression.git jkindRegression --branch master
 fi
 
 if [ -d "jkind" ]; then

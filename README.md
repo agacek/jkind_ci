@@ -15,7 +15,7 @@ Currently pulls from:
 
 https://github.com/agacek/jkind.git
 
-https://github.com/pr-martin/jkindRegression.git
+https://github.com/agacek/jkindRegression.git
 
 This has been run on Windows 7, RHEL 6, and Mac OSX El Capitan. Note that I think the $OSTYPE changed with El Capitan so I don't know if it will launch cleanly on older versions of OSX. (Check the if-then-else at the end of the script if something goofy happens).
 
